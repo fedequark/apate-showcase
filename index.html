@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d12">
+  <meta name="description" content="APATE coordinates cyber deception operations: design, capabilities, deterministic rules, telemetry, and outcomes in one cycle.">
+  <title>APATE — cyber deception operations</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script src="site.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Skip to content</a>
+  <div class="system-bar"><div class="shell system-bar-inner"><span>APATE // CYBER DECEPTION</span><span>BUILD 0.1.0RC1 · DETERMINISTIC RULE ENGINE</span></div></div>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="#inicio" aria-label="APATE, back to top"><span class="wordmark-mark" aria-hidden="true">A<span class="mark-dot">.</span></span><span>APATE</span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#que-hace">What it does</a>
+        <a href="#flujo">Workflow</a>
+        <a href="#arquitectura">Architecture</a>
+        <a class="nav-cta" href="#probar">Try it locally</a>
+      </nav>
+      <div class="header-controls">
+        <div class="language-toggle" role="group" aria-label="Site language">
+          <a href="index.html?lang=en" lang="en" hreflang="en" aria-current="page" data-language-choice="en">EN</a>
+          <a href="es/index.html?lang=es" lang="es" hreflang="es" data-language-choice="es">ES</a>
+        </div>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Dark mode" aria-pressed="false"><span class="theme-symbol" aria-hidden="true">◐</span><span>Dark mode</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero shell" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> OPERATION CONTROL PLANE / CYBER DECEPTION</p>
+        <h1 id="hero-title">One operation.<br><em>Many surfaces.</em><br>A verifiable cycle.</h1>
+        <p class="hero-lede">APATE connects an adversary hypothesis to decoys, response rules, and evidence. Design, execution, and observations stay linked to the same operation.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#flujo">Explore the workflow</a>
+          <a class="button button-secondary" href="#arquitectura">View architecture</a>
+        </div>
+        <p class="hero-note">Open core · AGPL-3.0-or-later · Technical release candidate 0.1.0rc1</p>
+      </div>
+
+      <div class="hero-visual" role="img" aria-label="Conceptual operation model: profile, rules, capabilities, and evidence">
+        <div class="visual-top"><span>APATE / OPERATION</span><span class="visual-id">01—04</span></div>
+        <div class="visual-grid">
+          <div class="visual-main">
+            <span class="visual-label">SHARED OBJECT</span>
+            <strong>Operation</strong>
+            <p>Profile · Rules of engagement · Scenarios · Narrative</p>
+          </div>
+          <div class="visual-rail" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="visual-step"><span class="visual-index">01</span><span>Capabilities</span><small>plugins and targets</small></div>
+          <div class="visual-step"><span class="visual-index">02</span><span>Events</span><small>interactions and TTPs</small></div>
+          <div class="visual-step"><span class="visual-index">03</span><span>Rules</span><small>permitted actions</small></div>
+          <div class="visual-step"><span class="visual-index">04</span><span>Evidence</span><small>telemetry and report</small></div>
+        </div>
+        <div class="visual-bottom"><span class="visual-pulse" aria-hidden="true"></span><span>CONCEPTUAL MODEL · NOT AN APP SCREENSHOT</span></div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="que-hace" aria-labelledby="que-hace-title">
+      <div class="shell">
+        <div class="section-heading"><p class="eyebrow">01 / WHAT IT DOES</p><h2 id="que-hace-title">The control plane for deception operations.</h2><p>APATE organizes different techniques around an operational hypothesis and records decisions and outcomes.</p></div>
+        <div class="feature-grid">
+          <article class="feature"><span class="feature-number">/ 01</span><h3>Design with context</h3><p>Bring together the adversary profile, expected TTPs, rules of engagement, scenarios, and narrative before activating capabilities.</p></article>
+          <article class="feature"><span class="feature-number">/ 02</span><h3>Coordinate capabilities</h3><p>Connect network and host decoys, simulated identities, and honeytokens through plugins and confirmable plans.</p></article>
+          <article class="feature"><span class="feature-number">/ 03</span><h3>Measure observations</h3><p>Link telemetry, IoCs, and observed TTPs to the operation; compare the intended effect with the available evidence.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-flow shell" id="flujo" aria-labelledby="flujo-title">
+      <div class="section-heading section-heading-split"><div><p class="eyebrow">02 / WORKFLOW</p><h2 id="flujo-title">From hypothesis<br>to report.</h2></div><p>A concise view of the workflow. Design suggestions require operator review; automated actions follow explicit rules and constraints.</p></div>
+      <ol class="flow-list">
+        <li><span class="flow-num">01</span><div><h3>Define the operation</h3><p>Choose the adversary, expected TTPs, assets, and rules of engagement.</p></div><span class="flow-keyword">DESIGN</span></li>
+        <li><span class="flow-num">02</span><div><h3>Connect scenarios and capabilities</h3><p>Link each technique to a deception intent, a narrative, and the plugins that implement it.</p></div><span class="flow-keyword">PREPARATION</span></li>
+        <li><span class="flow-num">03</span><div><h3>Observe and act</h3><p>Events feed telemetry and deterministic rules; operation constraints limit resulting actions.</p></div><span class="flow-keyword">EXECUTION</span></li>
+        <li><span class="flow-num">04</span><div><h3>Close with evidence</h3><p>Compare expected and observed TTPs, IoCs, and measured effects; export the report for the next cycle.</p></div><span class="flow-keyword">OUTCOMES</span></li>
+      </ol>
+    </section>
+
+    <section class="section section-architecture" id="arquitectura" aria-labelledby="arquitectura-title">
+      <div class="shell architecture-layout">
+        <div class="architecture-copy"><p class="eyebrow">03 / ARCHITECTURE</p><h2 id="arquitectura-title">One layer connecting decisions and signals.</h2><p>The EventBus delivers events to telemetry and the rule engine. The operation supplies context; plugins run capabilities, and the report closes the cycle.</p><p class="architecture-caption">Diagram of the current code, adapted from the Archify source.</p></div>
+        <figure class="architecture-figure"><img src="assets/apate-architecture-en.svg" alt="APATE architecture: operator and interface, operation, plugins, EventBus, rule engine, SQLite telemetry, and report" width="1440" height="750" loading="lazy"><figcaption>Architecture of an APATE operation · adapted from a diagram made with <a href="https://github.com/tt-a1i/archify">Archify</a>.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section section-try shell" id="probar" aria-labelledby="probar-title">
+      <div class="try-copy"><p class="eyebrow">04 / GET STARTED</p><h2 id="probar-title">Try it with sample data.</h2><p>From the APATE repository root, install the development environment and load the local seed. The example uses synthetic data.</p><p class="status-note"><strong>Current status.</strong> Technical release candidate; external integrations and operator evaluation still have pending validation gates.</p></div>
+      <div class="terminal" aria-label="Commands to run APATE locally"><div class="terminal-top"><span>TERMINAL</span><span>PYTHON 3.10+</span></div><pre><code><span class="prompt">$</span> python -m venv .venv
+<span class="prompt">$</span> python -m pip install -e ".[dev]"
+<span class="prompt">$</span> python examples/seed_demo.py
+<span class="prompt">$</span> python -m apate.web</code></pre><p>Activate the virtual environment before installing. Then open <code>127.0.0.1:5000/operations/</code>.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-inner"><div><strong>APATE<span class="footer-period">.</span></strong><p>Cyber deception operation orchestration.</p></div><div class="footer-meta"><span>AGPL-3.0-or-later</span><a href="#inicio">Back to top</a></div></div></footer>
+</body>
+</html>

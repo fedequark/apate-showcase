@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d12">
+  <meta name="description" content="APATE coordina operaciones de ciberengaño: diseño, capacidades, reglas deterministas, telemetría y resultados en un mismo ciclo.">
+  <title>APATE — operaciones de ciberengaño</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <script src="../site.js"></script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="system-bar"><div class="shell system-bar-inner"><span>APATE // CIBERENGAÑO</span><span>VERSIÓN 0.1.0RC1 · MOTOR DE REGLAS DETERMINISTA</span></div></div>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="#inicio" aria-label="APATE, volver al inicio"><span class="wordmark-mark" aria-hidden="true">A<span class="mark-dot">.</span></span><span>APATE</span></a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#que-hace">Qué hace</a>
+        <a href="#flujo">Flujo</a>
+        <a href="#arquitectura">Arquitectura</a>
+        <a class="nav-cta" href="#probar">Probar localmente</a>
+      </nav>
+      <div class="header-controls">
+        <div class="language-toggle" role="group" aria-label="Idioma del sitio">
+          <a href="../index.html?lang=en" lang="en" hreflang="en" data-language-choice="en">EN</a>
+          <a href="index.html?lang=es" lang="es" hreflang="es" aria-current="page" data-language-choice="es">ES</a>
+        </div>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Modo oscuro" aria-pressed="false"><span class="theme-symbol" aria-hidden="true">◐</span><span>Modo oscuro</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero shell" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> PLANO DE CONTROL / CIBERENGAÑO</p>
+        <h1 id="hero-title">Una operación.<br><em>Varias superficies.</em><br>Un ciclo verificable.</h1>
+        <p class="hero-lede">APATE conecta la hipótesis sobre el adversario con señuelos, reglas de actuación y evidencia. El diseño, la ejecución y lo observado comparten una misma operación.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#flujo">Entender el flujo</a>
+          <a class="button button-secondary" href="#arquitectura">Ver arquitectura</a>
+        </div>
+        <p class="hero-note">Núcleo abierto · AGPL-3.0-or-later · Candidata técnica 0.1.0rc1</p>
+      </div>
+
+      <div class="hero-visual" role="img" aria-label="Esquema conceptual de una operación: perfil, reglas, capacidades y evidencia">
+        <div class="visual-top"><span>APATE / OPERACIÓN</span><span class="visual-id">01—04</span></div>
+        <div class="visual-grid">
+          <div class="visual-main">
+            <span class="visual-label">OBJETO COMÚN</span>
+            <strong>Operación</strong>
+            <p>Perfil · Reglas de interacción · Escenarios · Narrativa</p>
+          </div>
+          <div class="visual-rail" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="visual-step"><span class="visual-index">01</span><span>Capacidades</span><small>plugins y destinos</small></div>
+          <div class="visual-step"><span class="visual-index">02</span><span>Eventos</span><small>interacciones y TTP</small></div>
+          <div class="visual-step"><span class="visual-index">03</span><span>Reglas</span><small>acciones permitidas</small></div>
+          <div class="visual-step"><span class="visual-index">04</span><span>Evidencia</span><small>telemetría e informe</small></div>
+        </div>
+        <div class="visual-bottom"><span class="visual-pulse" aria-hidden="true"></span><span>ESQUEMA CONCEPTUAL · NO ES UNA CAPTURA DE LA APP</span></div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="que-hace" aria-labelledby="que-hace-title">
+      <div class="shell">
+        <div class="section-heading"><p class="eyebrow">01 / QUÉ RESUELVE</p><h2 id="que-hace-title">El plano de control de las operaciones de engaño.</h2><p>APATE organiza técnicas distintas alrededor de una hipótesis operativa y deja rastro de las decisiones y los resultados.</p></div>
+        <div class="feature-grid">
+          <article class="feature"><span class="feature-number">/ 01</span><h3>Diseñar con contexto</h3><p>Uní perfil de adversario, TTP esperadas, reglas de interacción, escenarios y narrativa antes de activar capacidades.</p></article>
+          <article class="feature"><span class="feature-number">/ 02</span><h3>Coordinar capacidades</h3><p>Vinculá señuelos de red y host, identidad simulada y honeytokens mediante plugins y planes confirmables.</p></article>
+          <article class="feature"><span class="feature-number">/ 03</span><h3>Medir lo observado</h3><p>Relacioná telemetría, IoCs y TTP observadas con la operación; compará el efecto planificado con la evidencia disponible.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-flow shell" id="flujo" aria-labelledby="flujo-title">
+      <div class="section-heading section-heading-split"><div><p class="eyebrow">02 / RECORRIDO</p><h2 id="flujo-title">De la hipótesis<br>al informe.</h2></div><p>Un recorrido resumido del ciclo de trabajo. Las sugerencias de diseño requieren revisión del operador; las acciones automáticas pasan por reglas y restricciones explícitas.</p></div>
+      <ol class="flow-list">
+        <li><span class="flow-num">01</span><div><h3>Definí la operación</h3><p>Elegí el adversario, las TTP esperadas, los activos y las reglas de interacción.</p></div><span class="flow-keyword">DISEÑO</span></li>
+        <li><span class="flow-num">02</span><div><h3>Vinculá escenarios y capacidades</h3><p>Relacioná cada técnica con una intención de engaño, una narrativa y los plugins que la implementan.</p></div><span class="flow-keyword">PREPARACIÓN</span></li>
+        <li><span class="flow-num">03</span><div><h3>Observá y actuá</h3><p>Los eventos alimentan telemetría y reglas deterministas; las restricciones de la operación limitan las acciones derivadas.</p></div><span class="flow-keyword">EJECUCIÓN</span></li>
+        <li><span class="flow-num">04</span><div><h3>Cerrá con evidencia</h3><p>Contrastá TTP esperadas y observadas, IoCs y efectos medidos; exportá el informe para el siguiente ciclo.</p></div><span class="flow-keyword">RESULTADOS</span></li>
+      </ol>
+    </section>
+
+    <section class="section section-architecture" id="arquitectura" aria-labelledby="arquitectura-title">
+      <div class="shell architecture-layout">
+        <div class="architecture-copy"><p class="eyebrow">03 / ARQUITECTURA</p><h2 id="arquitectura-title">Una capa que conecta decisiones y señales.</h2><p>El EventBus entrega eventos a la telemetría y al motor de reglas. La operación aporta el contexto; los plugins ejecutan las capacidades y el informe cierra el ciclo.</p><p class="architecture-caption">Diagrama del código actual, creado con Archify.</p></div>
+        <figure class="architecture-figure"><img src="../assets/apate-architecture.png" alt="Arquitectura de APATE: operador e interfaz, operación, plugins, EventBus, motor de reglas, telemetría SQLite e informe" width="1440" height="900" loading="lazy"><figcaption>Arquitectura de una operación en APATE · diagrama hecho con <a href="https://github.com/tt-a1i/archify">Archify</a>.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section section-try shell" id="probar" aria-labelledby="probar-title">
+      <div class="try-copy"><p class="eyebrow">04 / PRIMER CONTACTO</p><h2 id="probar-title">Probalo con datos de ejemplo.</h2><p>Desde la raíz del repositorio de APATE, instalá el entorno de desarrollo y cargá el seed local. El ejemplo utiliza datos sintéticos.</p><p class="status-note"><strong>Estado actual.</strong> Candidata técnica; las integraciones externas y la evaluación con operadores tienen validaciones pendientes.</p></div>
+      <div class="terminal" aria-label="Comandos para probar APATE localmente"><div class="terminal-top"><span>TERMINAL</span><span>PYTHON 3.10+</span></div><pre><code><span class="prompt">$</span> python -m venv .venv
+<span class="prompt">$</span> python -m pip install -e ".[dev]"
+<span class="prompt">$</span> python examples/seed_demo.py
+<span class="prompt">$</span> python -m apate.web</code></pre><p>Activá el entorno virtual antes de instalar. Luego abrí <code>127.0.0.1:5000/operations/</code>.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-inner"><div><strong>APATE<span class="footer-period">.</span></strong><p>Orquestación de operaciones de ciberengaño.</p></div><div class="footer-meta"><span>AGPL-3.0-or-later</span><a href="#inicio">Volver arriba</a></div></div></footer>
+</body>
+</html>
